@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== PRIMARY SEO ===== -->
+  <title>M. D. SOLUTIONS | Performance &amp; Core Web Vitals — Speed, Stability &amp; Responsiveness </title>
+  <meta name="description" content="Core Web Vitals explained in detail: LCP, INP and CLS thresholds, how Google measures them, and how we improve speed, stability and responsiveness to boost both user experience and SEO rankings.">
+  <meta name="keywords" content="Core Web Vitals, LCP, INP, CLS, page speed optimisation, performance optimisation, Largest Contentful Paint, Interaction to Next Paint, Cumulative Layout Shift, Core Web Vitals South Africa">
+  <meta name="author" content="Makgobatlou Digital Solutions">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://mdsolutions.co.za/performance-core-web-vitals.html">
+    <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="#080B12">
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Makgobatlou Digital Solutions">
+  <meta property="og:title" content="Performance &amp; Core Web Vitals — Speed, Stability &amp; Responsiveness">
+  <meta property="og:description" content="LCP, INP and CLS explained: thresholds, measurement, and how we optimise performance to improve user experience and search rankings simultaneously.">
+  <meta property="og:url" content="https://mdsolutions.co.za/performance-core-web-vitals.html">
+  <meta property="og:image" content="https://mdsolutions.co.za/assets/og-core-web-vitals.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Performance and Core Web Vitals optimisation by Makgobatlou Digital">
+  <meta property="og:locale" content="en_ZA">
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Performance &amp; Core Web Vitals — Speed, Stability &amp; Responsiveness">
+  <meta name="twitter:description" content="LCP, INP and CLS explained — and how we optimise them for better UX and SEO.">
+  <meta name="twitter:image" content="https://mdsolutions.co.za/assets/og-core-web-vitals.jpg">
+  <meta name="twitter:image:alt" content="Core Web Vitals by Makgobatlou Digital">
+
+  <!-- ===== FONTS & ICONS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- ===== STRUCTURED DATA ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://mdsolutions.co.za/#organization",
+        "name": "Makgobatlou Digital Solutions",
+        "url": "https://mdsolutions.co.za/",
+        "logo": "https://mdsolutions.co.za/assets/logo.png",
+        "email": "info@mdsolutions.co.za",
+        "telephone": "+27-62-819-0212"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://mdsolutions.co.za/#website",
+        "url": "https://mdsolutions.co.za/",
+        "name": "Makgobatlou Digital Solutions",
+        "publisher": { "@id": "https://mdsolutions.co.za/#organization" },
+        "inLanguage": "en-ZA"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://mdsolutions.co.za/performance-core-web-vitals.html#webpage",
+        "url": "https://mdsolutions.co.za/performance-core-web-vitals.html",
+        "name": "Performance & Core Web Vitals — Speed, Stability & Responsiveness",
+        "description": "LCP, INP and CLS thresholds, measurement methodology, and optimisation services to improve user experience and SEO rankings.",
+        "isPartOf": { "@id": "https://mdsolutions.co.za/#website" },
+        "inLanguage": "en-ZA"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mdsolutions.co.za/performance-core-web-vitals.html#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mdsolutions.co.za/" },
+          { "@type": "ListItem", "position": 2, "name": "Performance & Core Web Vitals", "item": "https://mdsolutions.co.za/performance-core-web-vitals.html" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://mdsolutions.co.za/performance-core-web-vitals.html#service",
+        "name": "Performance & Core Web Vitals Optimisation",
+        "serviceType": "Website Performance Optimisation",
+        "provider": { "@id": "https://mdsolutions.co.za/#organization" },
+        "url": "https://mdsolutions.co.za/performance-core-web-vitals.html",
+        "description": "We audit and optimise Largest Contentful Paint (LCP), Interaction to Next Paint (INP) and Cumulative Layout Shift (CLS) — improving page speed, stability and responsiveness for better user experience and stronger SEO rankings.",
+        "areaServed": "ZA",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Core Web Vitals Optimisation Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Core Web Vitals Audit" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "LCP Optimisation" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "INP Optimisation" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CLS Optimisation" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Server & Delivery Optimisation" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Field Data Monitoring & Reporting" } }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://mdsolutions.co.za/performance-core-web-vitals.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are Core Web Vitals?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Core Web Vitals are three specific metrics Google uses to measure real user experience on a web page: Largest Contentful Paint (LCP) for loading speed, Interaction to Next Paint (INP) for responsiveness, and Cumulative Layout Shift (CLS) for visual stability. Each is assessed at the 75th percentile of real Chrome user data." }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the Core Web Vitals thresholds?",
+            "acceptedAnswer": { "@type": "Answer", "text": "For a 'Good' rating: LCP must be 2.5 seconds or less, INP must be 200 milliseconds or less, and CLS must be 0.1 or less. 'Needs Improvement' ranges are LCP 2.5–4.0s, INP 200–500ms and CLS 0.1–0.25. 'Poor' is LCP above 4.0s, INP above 500ms and CLS above 0.25." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do Core Web Vitals directly affect Google rankings?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Core Web Vitals are a confirmed ranking signal within Google's page experience system, but they are best understood as a tiebreaker: they matter most when competing pages have similar content relevance and authority. Poor Core Web Vitals also indirectly hurt rankings by increasing bounce rates, reducing engagement and wasting crawl budget." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between field data and lab data?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Field data comes from real users (Chrome User Experience Report / CrUX) and is what Google uses for ranking. Lab data comes from controlled tools like Lighthouse and is used for debugging. A page can score well in Lighthouse but still fail Core Web Vitals in the field because of real-device conditions, third-party scripts and network variability." }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does Core Web Vitals optimisation take?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Most optimisation projects take 2 to 6 weeks depending on the size of the site and the severity of the issues. Quick wins such as image compression and render-blocking fixes can show results within days; deeper work such as JavaScript refactoring and server architecture improvements takes longer." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good LCP score?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A good LCP is 2.5 seconds or less at the 75th percentile. LCP is typically the hardest Core Web Vital to pass — only around 62% of mobile pages meet the threshold — and it is usually caused by slow server response, unoptimised hero images, render-blocking resources or late-discovered LCP elements." }
+          },
+          {
+            "@type": "Question",
+            "name": "What replaced First Input Delay (FID)?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Interaction to Next Paint (INP) replaced First Input Delay (FID) as the responsiveness Core Web Vital on 12 March 2024. FID only measured the delay before the first interaction was processed; INP measures the full latency of all interactions across the page's lifetime, making it a more demanding and more representative metric." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you improve Core Web Vitals without rebuilding my site?",
+            "acceptedAnswer": { "@type": "Answer", "text": "In most cases, yes. The majority of Core Web Vitals issues are fixable through targeted changes: image compression and modern formats, font loading strategy, deferring non-critical JavaScript, reserving space for dynamic content, improving server response and adding caching or a CDN. A full rebuild is rarely required." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+ 
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a href="index.html" class="logo" aria-label="Makgobatlou Digital Solutions home">
+          <div class="logo-mark">
+            <svg width="42" height="42" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Makgobatlou Digital logo">
+              <defs>
+                <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#3B9EFF" />
+                  <stop offset="100%" stop-color="#8B5CF6" />
+                </linearGradient>
+                <linearGradient id="logoGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#00D4FF" />
+                  <stop offset="100%" stop-color="#A855F7" />
+                </linearGradient>
+              </defs>
+              <path d="M50 6 L88 28 L88 72 L50 94 L12 72 L12 28 Z" stroke="url(#logoGrad)" stroke-width="4" fill="none" opacity="0.9"/>
+              <path d="M30 68 L30 38 L50 56 L70 38 L70 68" stroke="url(#logoGrad2)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="50" cy="22" r="5" fill="#3B9EFF" />
+              <circle cx="50" cy="78" r="5" fill="#8B5CF6" />
+            </svg>
+          </div>
+          <div class="logo-text">
+            M. D. SOLUTIONS (PTY) LTD
+          </div>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#services">Services</a>
+          <a href="seo-optimisation.html">SEO</a>
+          <a href="template-redesign.html">Redesign</a>
+          <a href="mobile-apps.html">Mobile Apps</a>
+          <a href="performance-core-web-vitals.html">Performance</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <a href="index.html#contact" class="btn-outline">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <div class="container">
+      <section class="cwv-hero" aria-labelledby="cwv-hero-title">
+        <div class="cwv-hero-content">
+          <div class="cwv-hero-badge">
+            <i class="fas fa-gauge-high" aria-hidden="true" style="margin-right: 6px;"></i> Performance &amp; Core Web Vitals — in detail
+          </div>
+          <h1 class="cwv-hero-title" id="cwv-hero-title">
+            <span class="gradient-text">Speed. Stability.</span><br>
+            Responsiveness.
+          </h1>
+          <p class="cwv-hero-desc">
+            Core Web Vitals are Google's three metrics for measuring real user experience: loading speed (LCP), interactivity (INP) and visual stability (CLS). We audit, diagnose and fix all three — improving how your site feels to visitors <em>and</em> how it performs in search.
+          </p>
+          <div class="hero-buttons">
+            <a href="#consult" class="btn-primary"><i class="fas fa-calendar-check" aria-hidden="true"></i> Get a free CWV audit</a>
+            <a href="#metrics" class="btn-secondary"><i class="fas fa-chart-simple" aria-hidden="true"></i> Understand the metrics</a>
+          </div>
+        </div>
+        <div class="cwv-hero-visual">
+          <svg class="cwv-hero-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of Core Web Vitals metrics: loading speed, interactivity and visual stability">
+            <defs>
+              <linearGradient id="cwvGrad1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#0066FF" stop-opacity="0.7"/>
+                <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.2"/>
+              </linearGradient>
+              <linearGradient id="cwvGrad2" x1="1" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#A855F7" stop-opacity="0.1"/>
+              </linearGradient>
+            </defs>
+            <circle cx="200" cy="200" r="150" stroke="url(#cwvGrad1)" stroke-width="1.5" fill="none" stroke-dasharray="4 8"/>
+            <circle cx="200" cy="200" r="105" stroke="url(#cwvGrad2)" stroke-width="1.2" fill="none" opacity="0.6"/>
+            <!-- three metric nodes -->
+            <circle cx="200" cy="78" r="34" stroke="#3B9EFF" stroke-width="2.2" fill="rgba(0,90,255,0.08)"/>
+            <text x="200" y="75" text-anchor="middle" fill="#8BCBFF" font-family="Inter, sans-serif" font-weight="700" font-size="12">LCP</text>
+            <text x="200" y="90" text-anchor="middle" fill="#7A8C9E" font-family="Inter, sans-serif" font-weight="500" font-size="8">≤2.5s</text>
+
+            <circle cx="118" cy="248" r="34" stroke="#00D4FF" stroke-width="2.2" fill="rgba(0,212,255,0.06)"/>
+            <text x="118" y="245" text-anchor="middle" fill="#00D4FF" font-family="Inter, sans-serif" font-weight="700" font-size="12">INP</text>
+            <text x="118" y="260" text-anchor="middle" fill="#7A8C9E" font-family="Inter, sans-serif" font-weight="500" font-size="8">≤200ms</text>
+
+            <circle cx="282" cy="248" r="34" stroke="#8B5CF6" stroke-width="2.2" fill="rgba(120,80,255,0.08)"/>
+            <text x="282" y="245" text-anchor="middle" fill="#C4B5FD" font-family="Inter, sans-serif" font-weight="700" font-size="12">CLS</text>
+            <text x="282" y="260" text-anchor="middle" fill="#7A8C9E" font-family="Inter, sans-serif" font-weight="500" font-size="8">≤0.1</text>
+
+            <!-- connecting triangle lines -->
+            <path d="M200 112 L150 220 M200 112 L250 220 M150 220 L250 220" stroke="#4D8FCC" stroke-width="1.2" opacity="0.35" stroke-dasharray="3 5"/>
+            <!-- centre check -->
+            <circle cx="200" cy="200" r="16" fill="#3B9EFF" opacity="0.9"/>
+            <path d="M193 200 L198 205 L208 194" stroke="#080B12" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== WHAT ARE CORE WEB VITALS ===== -->
+    <div class="container">
+      <section class="intro-section" aria-labelledby="intro-title">
+        <div class="section-label">the definition</div>
+        <h2 class="section-title" id="intro-title">What are Core Web Vitals?</h2>
+        <div class="intro-grid">
+          <div class="intro-text">
+            <p>
+              <strong>Core Web Vitals are three specific metrics Google uses to quantify real user experience on a web page.</strong> They are not lab simulations and not vanity speed scores — they are measured from actual Chrome sessions across thousands of real devices, networks and locations, aggregated at the 75th percentile[reference:0]. In other words: they reflect what most of your visitors actually experience, not what a fast machine on a fast connection sees.
+            </p>
+            <p>
+              The three metrics cover three distinct dimensions of experience. <strong>Largest Contentful Paint (LCP)</strong> measures loading speed — when the largest visible element (usually a hero image or main heading) finishes rendering. <strong>Interaction to Next Paint (INP)</strong> measures responsiveness — how quickly the page visually responds after a click, tap or key press. <strong>Cumulative Layout Shift (CLS)</strong> measures visual stability — how much visible content moves unexpectedly during loading[reference:1].
+            </p>
+            <p>
+              Together they form the page experience layer of Google's ranking systems. They do not replace content relevance or authority — but when two pages compete for the same query with comparable content, the one delivering better Core Web Vitals consistently earns the higher position[reference:2]. Poor performance also hurts indirectly: slower pages increase bounce rates, reduce engagement and consume more crawl budget[reference:3].
+            </p>
+            <p>
+              The practical implication is straightforward: <strong>Core Web Vitals are simultaneously a user experience problem and an SEO problem</strong>. Fixing them improves both at once — which is why they sit at the centre of any serious performance programme.
+            </p>
+          </div>
+          <aside class="intro-aside" aria-label="At a glance">
+            <h3><i class="fas fa-bolt" aria-hidden="true" style="margin-right:8px;"></i>At a glance</h3>
+            <ul>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>LCP:</strong> loading speed — good at ≤ 2.5 s.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>INP:</strong> responsiveness — good at ≤ 200 ms.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>CLS:</strong> visual stability — good at ≤ 0.1.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>Measured:</strong> 75th percentile of real Chrome users (field data).</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>Ranking role:</strong> a tiebreaker within page experience — not a replacement for content quality.</span></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== THE THREE METRICS ===== -->
+    <div class="container" id="metrics">
+      <section class="metrics-section" aria-labelledby="metrics-title">
+        <div class="section-label">the three metrics</div>
+        <h2 class="section-title" id="metrics-title">LCP, INP and CLS — thresholds and fixes</h2>
+        <p class="section-subtitle">
+          Each metric has a clear "Good" threshold, a diagnosis method and a known set of fixes. Here is what each one measures and what typically moves it.
+        </p>
+        <div class="metrics-grid">
+          <article class="metric-card">
+            <div class="metric-head">
+              <i class="fas fa-image" aria-hidden="true"></i>
+              <h3>LCP — Largest Contentful Paint</h3>
+            </div>
+            <p class="metric-sub">Loading speed: when the largest visible element renders.</p>
+            <div class="metric-thresholds">
+              <span class="threshold good">Good ≤ 2.5 s</span>
+              <span class="threshold mid">Needs improvement 2.5–4.0 s</span>
+              <span class="threshold poor">Poor &gt; 4.0 s</span>
+            </div>
+            <p>LCP is the hardest Core Web Vital to pass — only around 62% of mobile pages meet the threshold — and it is the most common failure point for enterprise homepages[reference:4][reference:5]. It breaks down into four subparts: Time to First Byte (TTFB), resource load delay, resource load time and element render delay[reference:6].</p>
+            <ul class="metric-fixes">
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Compress and convert hero images to WebP or AVIF; add <code>fetchpriority="high"</code> and preload the LCP element.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Reduce server response time (TTFB) with caching and a CDN.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Eliminate render-blocking CSS and JavaScript; inline critical CSS.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Use <code>font-display: swap</code> and preload key fonts.</span></li>
+            </ul>
+          </article>
+
+          <article class="metric-card">
+            <div class="metric-head">
+              <i class="fas fa-hand-pointer" aria-hidden="true"></i>
+              <h3>INP — Interaction to Next Paint</h3>
+            </div>
+            <p class="metric-sub">Responsiveness: visual latency after every interaction.</p>
+            <div class="metric-thresholds">
+              <span class="threshold good">Good ≤ 200 ms</span>
+              <span class="threshold mid">Needs improvement 200–500 ms</span>
+              <span class="threshold poor">Poor &gt; 500 ms</span>
+            </div>
+            <p>INP replaced First Input Delay (FID) as the interactivity metric on 12 March 2024[reference:7]. FID only measured the delay before the first interaction was processed; INP measures the full latency of all interactions across the page's lifetime — a far more demanding and representative measure[reference:8]. It is caused by long JavaScript tasks blocking the main thread, heavy event handlers and excessive DOM size[reference:9].</p>
+            <ul class="metric-fixes">
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Break long JavaScript tasks into smaller chunks (under 50 ms).</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Debounce and throttle event handlers; defer non-critical scripts.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Reduce DOM size (over 1,500 elements is a warning sign).</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Audit and defer third-party scripts (analytics, chat, A/B testing).</span></li>
+            </ul>
+          </article>
+
+          <article class="metric-card">
+            <div class="metric-head">
+              <i class="fas fa-arrows-up-down" aria-hidden="true"></i>
+              <h3>CLS — Cumulative Layout Shift</h3>
+            </div>
+            <p class="metric-sub">Visual stability: unexpected movement of visible content.</p>
+            <div class="metric-thresholds">
+              <span class="threshold good">Good ≤ 0.1</span>
+              <span class="threshold mid">Needs improvement 0.1–0.25</span>
+              <span class="threshold poor">Poor &gt; 0.25</span>
+            </div>
+            <p>CLS quantifies how much visible content jumps around during and after load. Every unexpected shift — an image loading without dimensions, a font swapping late, an ad injecting above existing content — frustrates users and can cause accidental clicks[reference:10]. It is the most straightforward of the three to fix, and the most commonly passed (around 81% of pages)[reference:11].</p>
+            <ul class="metric-fixes">
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Always set explicit <code>width</code> and <code>height</code> (or aspect ratio) on images and videos.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Reserve space for ads, embeds and dynamic content containers.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Use font preloading and <code>font-display: optional</code> or <code>swap</code> with matched metrics.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Never insert content above existing content unless triggered by user interaction.</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== WHY IT MATTERS ===== -->
+    <div class="container">
+      <section class="why-section" aria-labelledby="why-title">
+        <div class="section-label">business impact</div>
+        <h2 class="section-title" id="why-title">Why Core Web Vitals matter — for SEO and for revenue</h2>
+        <p class="section-subtitle">
+          Performance is not a purely technical concern. It sits at the intersection of search visibility, user behaviour and commercial outcomes.
+        </p>
+        <div class="why-grid">
+          <article class="why-card">
+            <div class="why-icon"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i></div>
+            <h3>Search ranking signal</h3>
+            <p>Core Web Vitals are a confirmed ranking input within Google's page experience system. They act as a tiebreaker: when content relevance and authority are comparable, better CWV earns the higher position[reference:12].</p>
+          </article>
+          <article class="why-card">
+            <div class="why-icon"><i class="fas fa-person-walking-arrow-right" aria-hidden="true"></i></div>
+            <h3>Lower bounce, higher engagement</h3>
+            <p>Slow pages lose visitors before they engage. A one-second delay in load time measurably reduces conversions, and 45% of consumers say they are less likely to purchase when a site loads slower than expected[reference:13][reference:14].</p>
+          </article>
+          <article class="why-card">
+            <div class="why-icon"><i class="fas fa-arrow-trend-up" aria-hidden="true"></i></div>
+            <h3>Higher conversion rates</h3>
+            <p>Optimised Core Web Vitals improve the user experience, which converts more visitors into customers. Rakuten saw a 33.1% increase in conversion rate after improving CWV; Yelp saw a 15% improvement[reference:15].</p>
+          </article>
+          <article class="why-card">
+            <div class="why-icon"><i class="fas fa-robot" aria-hidden="true"></i></div>
+            <h3>Better crawl efficiency</h3>
+            <p>Fast, stable pages consume less crawl budget. Googlebot can discover and index more of your content when pages respond quickly and do not time out[reference:16].</p>
+          </article>
+          <article class="why-card">
+            <div class="why-icon"><i class="fas fa-medal" aria-hidden="true"></i></div>
+            <h3>Competitive advantage</h3>
+            <p>Only about 48–50% of mobile pages pass all three Core Web Vitals. Sites that optimise now hold a measurable edge over competitors who have not yet acted[reference:17].</p>
+          </article>
+          <article class="why-card">
+            <div class="why-icon"><i class="fas fa-leaf" aria-hidden="true"></i></div>
+            <h3>Leaner, cheaper infrastructure</h3>
+            <p>A faster site uses fewer resources, serves fewer bytes and often reduces hosting and bandwidth costs — while delivering a better experience[reference:18].</p>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== MEASUREMENT ===== -->
+    <div class="container">
+      <section class="measure-section" aria-labelledby="measure-title">
+        <div class="section-label">how it is measured</div>
+        <h2 class="section-title" id="measure-title">Field data vs lab data — and why the difference matters</h2>
+        <p class="section-subtitle">
+          Core Web Vitals are measured in two fundamentally different ways. Confusing them is the most common reason teams "fix" performance and see no ranking change.
+        </p>
+        <div class="measure-grid">
+          <article class="measure-card field">
+            <div class="measure-head">
+              <i class="fas fa-users" aria-hidden="true"></i>
+              <h3>Field data (real users)</h3>
+            </div>
+            <p class="measure-tagline">What Google actually uses for ranking.</p>
+            <ul class="measure-list">
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>Source:</strong> Chrome User Experience Report (CrUX) — aggregated from real Chrome sessions.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>Access via:</strong> PageSpeed Insights, Search Console Core Web Vitals report, CrUX API, or custom Real User Monitoring (RUM).</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>What it tells you:</strong> what your actual visitors experience across their devices, networks and locations.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>Percentile:</strong> 75th percentile — 75% of page loads must meet the "Good" threshold for the page to pass.</span></li>
+            </ul>
+            <div class="measure-note">Field data is the ground truth for ranking. Always baseline it first, and re-check it after changes have had time to propagate (typically 28 days).</div>
+          </article>
+          <article class="measure-card lab">
+            <div class="measure-head">
+              <i class="fas fa-flask" aria-hidden="true"></i>
+              <h3>Lab data (simulated)</h3>
+            </div>
+            <p class="measure-tagline">What you use for diagnosis and debugging.</p>
+            <ul class="measure-list">
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>Source:</strong> Lighthouse, Chrome DevTools, WebPageTest — controlled conditions.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>What it tells you:</strong> what is technically possible, and which specific resources or scripts are causing problems.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>Limitation:</strong> lab conditions cannot replicate real-device diversity, cache state or actual interaction patterns[reference:19].</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>Best use:</strong> reproducible diagnostics, regression testing after deploys, and identifying the cause behind a field failure.</span></li>
+            </ul>
+            <div class="measure-note">A page can score 100 in Lighthouse and still fail Core Web Vitals in the field — and vice versa. Use lab data to fix, field data to judge.</div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== PROCESS ===== -->
+    <div class="container" id="process">
+      <section class="process-section" aria-labelledby="process-title">
+        <div class="section-label">our approach</div>
+        <h2 class="section-title" id="process-title">How we optimise Core Web Vitals</h2>
+        <p class="section-subtitle">
+          A six-stage process that starts from real field data, fixes the highest-impact bottlenecks first, and verifies improvement against the metric Google actually uses.
+        </p>
+        <div class="process-grid">
+          <article class="process-card">
+            <div class="process-number" aria-hidden="true">01</div>
+            <h3>Baseline &amp; Field Audit</h3>
+            <p>We pull CrUX field data for your key templates, identify which metric is failing and on which pages, and establish a p75 baseline for LCP, INP and CLS across mobile and desktop.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-number" aria-hidden="true">02</div>
+            <h3>Lab Diagnosis</h3>
+            <p>Using Lighthouse, DevTools performance traces and network waterfalls, we pinpoint the specific causes — render-blocking resources, oversized images, long tasks, layout-shift sources and slow server responses.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-number" aria-hidden="true">03</div>
+            <h3>LCP Optimisation</h3>
+            <p>We reduce TTFB through caching and CDN, make the LCP element discoverable and high-priority, compress and modernise image formats, and eliminate render-blocking CSS and JavaScript.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-number" aria-hidden="true">04</div>
+            <h3>INP Optimisation</h3>
+            <p>We break long main-thread tasks, defer and trim third-party scripts, reduce DOM size, and optimise event handlers so interactions paint quickly even on mid-range devices.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-number" aria-hidden="true">05</div>
+            <h3>CLS Optimisation</h3>
+            <p>We reserve space for images, ads and embeds, stabilise font loading, and eliminate unexpected layout shifts from dynamic content injection.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-number" aria-hidden="true">06</div>
+            <h3>Verify &amp; Monitor</h3>
+            <p>We re-test in the lab immediately, then monitor field data as it propagates. You receive before/after p75 comparisons and an ongoing monitoring setup so regressions are caught early.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== COMMON BOTTLENECKS ===== -->
+    <div class="container">
+      <section class="bottleneck-section" aria-labelledby="bottleneck-title">
+        <div class="section-label">what usually goes wrong</div>
+        <h2 class="section-title" id="bottleneck-title">The bottlenecks we see most often</h2>
+        <p class="section-subtitle">
+          Across audits, the same handful of issues account for the majority of Core Web Vitals failures. Most are fixable without a rebuild.
+        </p>
+        <div class="bottleneck-grid">
+          <article class="bottleneck-card">
+            <h3><i class="fas fa-triangle-exclamation" aria-hidden="true"></i> Unoptimised hero images</h3>
+            <p>Large, uncompressed JPEGs and PNGs as the LCP element — often several megabytes. Fix: modern formats, correct sizing, compression and priority hints[reference:20].</p>
+          </article>
+          <article class="bottleneck-card">
+            <h3><i class="fas fa-triangle-exclamation" aria-hidden="true"></i> Render-blocking CSS and JS</h3>
+            <p>Stylesheets and scripts in the head that delay first paint. Fix: critical CSS inlining, deferring non-critical scripts, and removing unused code[reference:21].</p>
+          </article>
+          <article class="bottleneck-card">
+            <h3><i class="fas fa-triangle-exclamation" aria-hidden="true"></i> Slow server response</h3>
+            <p>TTFB above 200–800 ms delays everything that follows. Fix: server caching, edge CDN, database query optimisation and faster hosting[reference:22].</p>
+          </article>
+          <article class="bottleneck-card">
+            <h3><i class="fas fa-triangle-exclamation" aria-hidden="true"></i> Third-party script bloat</h3>
+            <p>Analytics, chat widgets, tag managers and A/B testing tools competing for main-thread time. Fix: audit, defer, consolidate and remove what is not earning its cost[reference:23].</p>
+          </article>
+          <article class="bottleneck-card">
+            <h3><i class="fas fa-triangle-exclamation" aria-hidden="true"></i> Long JavaScript tasks</h3>
+            <p>Heavy framework hydration and large bundles blocking the main thread, making every interaction feel sluggish. Fix: code splitting, task breaking and lighter hydration[reference:24].</p>
+          </article>
+          <article class="bottleneck-card">
+            <h3><i class="fas fa-triangle-exclamation" aria-hidden="true"></i> Layout shifts from dynamic content</h3>
+            <p>Images without dimensions, late-loading fonts, injected ads and cookie banners pushing content down. Fix: reserved space and stable font loading[reference:25].</p>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== BENEFITS ===== -->
+    <div class="container">
+      <section class="benefits-section" aria-labelledby="benefits-title">
+        <div class="section-label">outcomes</div>
+        <h2 class="section-title" id="benefits-title">What improving Core Web Vitals delivers</h2>
+        <p class="section-subtitle">
+          Performance work is measurable. These are the outcomes clients typically see once field data stabilises.
+        </p>
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-gauge-high" aria-hidden="true"></i></div>
+            <h3>Faster perceived load</h3>
+            <p>LCP improvements make the page feel instant — the largest element appears sooner, so visitors start engaging instead of waiting.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-hand-pointer" aria-hidden="true"></i></div>
+            <h3>Snappier interactions</h3>
+            <p>INP improvements make taps, clicks and form inputs respond immediately, reducing frustration and abandoned actions.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-arrows-up-down" aria-hidden="true"></i></div>
+            <h3>Stable, trustworthy layout</h3>
+            <p>CLS fixes stop content jumping around — fewer mis-taps, less frustration and a more professional impression.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-arrow-trend-up" aria-hidden="true"></i></div>
+            <h3>Better SEO footing</h3>
+            <p>Passing Core Web Vitals removes a tiebreaker disadvantage and supports stronger rankings when content is competitive.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-cart-shopping" aria-hidden="true"></i></div>
+            <h3>Higher conversions</h3>
+            <p>Faster, smoother experiences convert better — with documented revenue lifts across e-commerce and lead-generation sites[reference:26].</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+            <h3>Ongoing measurability</h3>
+            <p>Every improvement is visible in p75 field data, giving you a clear, defensible performance record over time.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== DELIVERABLES ===== -->
+    <div class="container">
+      <section class="deliver-section" aria-labelledby="deliver-title">
+        <div class="section-label">what's included</div>
+        <h2 class="section-title" id="deliver-title">What you get — and what to expect</h2>
+        <p class="section-subtitle">
+          Clear deliverables, transparent reporting, and a realistic view of how long field data takes to reflect changes.
+        </p>
+        <div class="deliver-grid">
+          <article class="deliver-card">
+            <h3><i class="fas fa-clipboard-list" aria-hidden="true"></i> Deliverables</h3>
+            <ul class="deliver-list">
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Field baseline report with p75 LCP, INP and CLS by template.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Lab diagnosis with prioritised, cause-specific fixes.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Implemented optimisations (images, scripts, fonts, server, caching).</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Before/after lab results and field monitoring setup.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Documentation and handover for your dev team.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Optional ongoing monitoring retainer.</span></li>
+            </ul>
+            <div class="deliver-note">Most issues are fixed without a rebuild — through targeted, surgical changes.</div>
+          </article>
+          <article class="deliver-card">
+            <h3><i class="fas fa-clock" aria-hidden="true"></i> Typical timeline</h3>
+            <ul class="deliver-list">
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>Week 1:</strong> field baseline, lab diagnosis, prioritised plan.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>Weeks 2–3:</strong> LCP and CLS fixes (usually fastest wins).</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>Weeks 3–5:</strong> INP work and third-party script audit.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>Weeks 5–6:</strong> verification, lab re-testing and monitoring setup.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>28 days post-launch:</strong> field data review and final report.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>Ongoing:</strong> monitoring and regression prevention.</span></li>
+            </ul>
+            <div class="deliver-note">Smaller sites can complete in 2–3 weeks; large multi-template sites may extend to 8 weeks.</div>
+          </article>
+          <article class="deliver-card">
+            <h3><i class="fas fa-coins" aria-hidden="true"></i> Cost guidance</h3>
+            <ul class="deliver-list">
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Pricing depends on the number of templates and the depth of issues.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Image, font and caching wins are typically the most cost-effective.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Deep JavaScript or server refactoring sits at the higher end.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Fixed-scope quote provided after the audit — no open-ended billing.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Phased optimisation available to spread cost and risk.</span></li>
+              <li><i class="fas fa-check" aria-hidden="true"></i><span>Monitoring retainers available after the initial project.</span></li>
+            </ul>
+            <div class="deliver-note">Contact us for a tailored estimate based on your site and current field data.</div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== FAQ ===== -->
+    <div class="container">
+      <section class="faq-section" aria-labelledby="faq-title">
+        <div class="section-label">faq</div>
+        <h2 class="section-title" id="faq-title">Core Web Vitals questions, answered</h2>
+        <div class="faq-grid">
+          <details class="faq-item">
+            <summary>What are Core Web Vitals?</summary>
+            <p>Core Web Vitals are three specific metrics Google uses to measure real user experience on a web page: Largest Contentful Paint (LCP) for loading speed, Interaction to Next Paint (INP) for responsiveness, and Cumulative Layout Shift (CLS) for visual stability. Each is assessed at the 75th percentile of real Chrome user data.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What are the Core Web Vitals thresholds?</summary>
+            <p>For a "Good" rating: LCP must be 2.5 seconds or less, INP must be 200 milliseconds or less, and CLS must be 0.1 or less. "Needs Improvement" ranges are LCP 2.5–4.0 s, INP 200–500 ms and CLS 0.1–0.25. "Poor" is LCP above 4.0 s, INP above 500 ms and CLS above 0.25.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do Core Web Vitals directly affect Google rankings?</summary>
+            <p>Core Web Vitals are a confirmed ranking signal within Google's page experience system, but they are best understood as a tiebreaker: they matter most when competing pages have similar content relevance and authority. Poor Core Web Vitals also indirectly hurt rankings by increasing bounce rates, reducing engagement and wasting crawl budget.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What is the difference between field data and lab data?</summary>
+            <p>Field data comes from real users (Chrome User Experience Report / CrUX) and is what Google uses for ranking. Lab data comes from controlled tools like Lighthouse and is used for debugging. A page can score well in Lighthouse but still fail Core Web Vitals in the field because of real-device conditions, third-party scripts and network variability.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How long does Core Web Vitals optimisation take?</summary>
+            <p>Most optimisation projects take 2 to 6 weeks depending on the size of the site and the severity of the issues. Quick wins such as image compression and render-blocking fixes can show results within days; deeper work such as JavaScript refactoring and server architecture improvements takes longer.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What is a good LCP score?</summary>
+            <p>A good LCP is 2.5 seconds or less at the 75th percentile. LCP is typically the hardest Core Web Vital to pass — only around 62% of mobile pages meet the threshold — and it is usually caused by slow server response, unoptimised hero images, render-blocking resources or late-discovered LCP elements.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What replaced First Input Delay (FID)?</summary>
+            <p>Interaction to Next Paint (INP) replaced First Input Delay (FID) as the responsiveness Core Web Vital on 12 March 2024. FID only measured the delay before the first interaction was processed; INP measures the full latency of all interactions across the page's lifetime, making it a more demanding and more representative metric.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can you improve Core Web Vitals without rebuilding my site?</summary>
+            <p>In most cases, yes. The majority of Core Web Vitals issues are fixable through targeted changes: image compression and modern formats, font loading strategy, deferring non-critical JavaScript, reserving space for dynamic content, improving server response and adding caching or a CDN. A full rebuild is rarely required.</p>
+          </details>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== CTA BANNER ===== -->
+    <div class="container">
+      <aside class="cta-banner" aria-label="Call to action">
+        <h2>Ready to make your site faster — and rank better?</h2>
+        <a href="#consult" class="btn-primary"><i class="fas fa-calendar-check" aria-hidden="true"></i> Get a free CWV audit</a>
+      </aside>
+    </div>
+
+    <!-- ===== CONSULTATION ===== -->
+    <div class="container" id="consult">
+      <section class="consult-section" aria-labelledby="consult-title">
+        <div class="consult-info">
+          <h2 id="consult-title">Get a free Core Web Vitals audit</h2>
+          <p>Send us your website. We'll pull your field data, identify which metrics are failing, and reply with a prioritised summary of what to fix and why.</p>
+          <div class="consult-details">
+            <a href="tel:+27628190212"><i class="fas fa-phone-alt" aria-hidden="true"></i> +27 62 819 0212</a>
+            <a href="mailto:info@mdsolutions.co.za"><i class="fas fa-envelope" aria-hidden="true"></i> info@mdsolutions.co.za</a>
+            <a href="#"><i class="fas fa-clock" aria-hidden="true"></i> Mon–Fri, 9am – 5pm SAST</a>
+          </div>
+        </div>
+        <form class="consult-form" action="mailto:info@mdsolutions.co.za" method="POST" enctype="text/plain" onsubmit="alert('Thank you! Your email client will open to send the Core Web Vitals audit request. (demo)');">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" aria-label="Your name" autocomplete="name" required>
+            <input type="email" name="email" placeholder="Email address" aria-label="Email address" autocomplete="email" required>
+          </div>
+          <input type="url" name="website" placeholder="Website URL" aria-label="Website URL" autocomplete="url" required>
+          <textarea name="message" placeholder="Which pages or metrics are you most concerned about?" aria-label="Performance concerns" required></textarea>
+          <button type="submit" class="btn-primary"><i class="fas fa-paper-plane" aria-hidden="true"></i> Request CWV audit</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <div class="container">
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-mark">
+            <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Makgobatlou Digital logo">
+              <defs>
+                <linearGradient id="footerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#3B9EFF" />
+                  <stop offset="100%" stop-color="#8B5CF6" />
+                </linearGradient>
+              </defs>
+              <path d="M50 6 L88 28 L88 72 L50 94 L12 72 L12 28 Z" stroke="url(#footerGrad)" stroke-width="4" fill="none"/>
+              <path d="M30 68 L30 38 L50 56 L70 38 L70 68" stroke="url(#footerGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="50" cy="22" r="4" fill="#3B9EFF" />
+            </svg>
+          </div>
+          <p>SEO, web apps &amp; mobile —<br>Makgobatlou Digital. Where websites evolve.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <a href="seo-optimisation.html">SEO Optimisation</a>
+            <a href="template-redesign.html">Template Redesign</a>
+            <a href="mobile-apps.html">Android &amp; iOS Apps</a>
+            <a href="performance-core-web-vitals.html">Performance &amp; CWV</a>
+            <a href="index.html#services">Full‑Stack Web Apps</a>
+            <a href="index.html#services">Consultation</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="index.html#about">About</a>
+           
+            <a href="index.html#contact">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Trademark</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2025 Makgobatlou Digital Solutions. All rights reserved.</div>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
