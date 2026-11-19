@@ -4,7 +4,7 @@ declare(strict_types=1);
 /* ========= CONFIG ========= */
 const TO_EMAIL   = 'info@mdsolutions.co.za';      // where enquiries go
 const FROM_EMAIL = 'no-reply@mdsolutions.co.za'; // MUST be an address on your own domain
-const SITE_NAME  = 'https://mdsolutions.co.za';
+const SITE_NAME  = 'mdsolutions.co.za';
 const REDIRECT   = 'index.html#consultation';  // fallback page for non-JS submits
 const MIN_SECONDS_BETWEEN_SUBMITS = 30;        // simple rate limit per visitor
 /* ========================== */
